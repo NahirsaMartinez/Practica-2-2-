@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Lista de tareas - TO-DO </h1>
+
+    <input type="text" id="nueva-tarea" placeholder="ingresar tarea">
+    <button onclick="agregarTarea()"> Agregar </button>
+    <br>
+    <input type="text" placeholder="numero tarea buscada" id="num-tarea">
+    <button onclick="buscar()">Buscar</button>
+    <br>
+
+    <input type="number" placeholder="numero tarea actualizar" id="num-tarea-actualizar">
+    <input type="text" placeholder="texto tarea actualizar" id="txt-tarea-actualizar">
+    <button onclick="actualizar()">Actualizar</button>
+    <br>
+    <input type="text" id="num-tarea-eliminar" placeholder="numero de tarea a eliminar">
+    <button onclick="eliminar()">Eliminar</button>
+   
+    <br>
+
+    <button onclick="eliminarTodo()">Eliminar todo</button>
+
+    <div id="lista-tarea">
+        <div id="tarea-buscada">
+    
+        </div>
+        <ol></ol>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
